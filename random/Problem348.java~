@@ -1,0 +1,51 @@
+import java.util.*;
+
+public class Problem348 {
+
+	public static void main(String[] args) {
+
+	}
+
+	static class TicTacToe {
+
+		int[][] board = null;
+		int n;
+
+		public TicTacToe(int n) {
+			board = new int[n][n];
+			this.n = n;
+		}
+
+		public int move(int row, int col, int player) {
+			board[row][col] = player;
+
+			if(check(row, col, player)) {
+				return player;
+			} else {
+				return 0;
+			}
+		}
+
+		public boolean check(int r, int c, int turn) {
+
+			boolean row = true, col = true, diag = true;
+
+			for(int i=0; i<n; i++) {
+				if(r == c) {
+					if(diag && board[i][i] != turn) {
+						diag = false;
+					}
+				}
+					
+				if(board[r][i] != turn) {
+					row = false;
+				}
+				if(board[i][c] != turn) {
+					col = false;
+				}
+			}
+
+			return row || col || diag;
+		}
+	}
+}

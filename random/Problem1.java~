@@ -1,0 +1,13 @@
+import java.util.*;
+
+public class Problem1 {
+
+	public static void main(String[] args) {
+
+	}
+
+	public int[] twoSum(int[] nums, int target) {
+
+	}
+
+}

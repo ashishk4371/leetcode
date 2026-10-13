@@ -1,0 +1,12 @@
+void main() {
+	IO.println(minSumOfLengths(new int[]{1,1,1,1,2,2,3,1,4}, 4));
+}
+
+int minSumOfLengths(int[] arr, int target) {
+
+	int sum = 0, len1 = 0, len2 = 0, count = 0;
+	List<Integer> res = new ArrayList<>();
+	Set<Integer> set = new HashSet<>(I);
+
+	return count;
+}	

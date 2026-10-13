@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Solution {
+
+	public static void main(String[] args) {
+
+	}
+
+	static class MedianFinder {
+
+		public MedianFinder() {
+
+		}
+
+		public void addNum(int num) {
+
+		}
+
+		public void findMedian() {
+
+		}
+}
