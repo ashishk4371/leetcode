@@ -1,0 +1,8 @@
+import java.util.*;
+
+public class Problem560 {
+
+	public static int subarraySum(int[] nums, int k) {
+
+	}
+}
